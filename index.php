@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 header('Content-type: application/json');
 
 $db_host = "ec2-174-129-236-21.compute-1.amazonaws.com";
