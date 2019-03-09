@@ -23,7 +23,8 @@ if (!$db) {
 $query = "SELECT * FROM product";
 
 if (isset($_REQUEST['keyword'])){
-    $query = $query." WHERE title LIKE '%".$_REQUEST['keyword']."%'";
+    $keyword = strtolower ( $_REQUEST['keyword'] );
+    $query = $query." WHERE LOWER(title) LIKE '%".$keyword."%'";
 }
 
 
