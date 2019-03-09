@@ -36,9 +36,10 @@ if (isset($_REQUEST['title']) &&
         $optQuery = "INSERT INTO product (title,url,subtitle,image_url,description,button_text) VALUES ('$title','$url','$subtitle','$image','$button') RETURNING id;";
         $optQueryExec = pg_query($db,$optQuery);
 
-        echo '{"status":200,"message":"1 data inserted}';
+        echo '{"status":200,"message":"1 data inserted"}';
     }else{
         http_response_code(400);
+        echo '{"status":400,"message":"invalid parameters"}';
     }
     pg_close($db);
 ?>
