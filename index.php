@@ -20,7 +20,7 @@ if (!$db) {
     exit;
 }
 
-$query = "SELECT * FROM product";
+$query = "SELECT title,url,subtitle,image_url,description,button_text FROM product";
 
 if (isset($_REQUEST['keyword'])){
     $keyword = strtolower ( $_REQUEST['keyword'] );
