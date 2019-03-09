@@ -33,11 +33,11 @@ if (isset($_REQUEST['title']) &&
         $url = $_REQUEST['url'];
         $button = $_REQUEST['button_text'];
 
-        $optQuery = "INSERT INTO product (title,url,subtitle,image_url,description,button_text) VALUES ('$title','$url','$subtitle','$image','$button');";
+        $optQuery = "INSERT INTO product (title,url,subtitle,image_url,description,button_text) VALUES ('$title','$url','$subtitle','$image','$description','$button');";
         
         $optQueryExec = pg_query($db,$optQuery);
 
-        echo '{"status":200,"message":"1 data inserted","query":"'.$optQuery.'"}';
+        echo '{"status":200,"message":"1 data inserted"}';
     }else{
         http_response_code(400);
         echo '{"status":400,"message":"invalid parameters"}';
