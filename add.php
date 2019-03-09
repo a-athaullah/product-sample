@@ -37,7 +37,7 @@ if (isset($_REQUEST['title']) &&
         
         $optQueryExec = pg_query($db,$optQuery);
 
-        echo '{"status":200,"message":"1 data inserted,"query":"'.$optQuery.'"}';
+        echo '{"status":200,"message":"1 data inserted","query":"'.$optQuery.'"}';
     }else{
         http_response_code(400);
         echo '{"status":400,"message":"invalid parameters"}';
