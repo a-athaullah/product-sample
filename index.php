@@ -5,10 +5,10 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 header("Content-type: application/json");
 
 
-$db_host = "ec2-174-129-236-21.compute-1.amazonaws.com";
-$db_name = "d39pgl7bkn08d4";
-$db_user = "efzoujkkvdnkkp";
-$db_pass = "b8149b10a3c2a78eff917d1d0162e3fe800bd1283916b57f4e82265f6fe0b3f2";
+$db_host = "ec2-3-223-39-179.compute-1.amazonaws.com";
+$db_name = "d86udt7janmlla";
+$db_user = "jtmddppfbrldjg";
+$db_pass = "77b896d58bb593c0713a12d018abbde5a21ae95d78a7abbd387fe92ab78ed327";
 $db_port = "5432";
 
 $db_conn_string = "host=".$db_host." port=".$db_port." dbname=".$db_name." user=".$db_user." password=".$db_pass;
